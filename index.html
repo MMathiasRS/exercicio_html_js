@@ -3,35 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css">
     <title>Document</title>
   </head>
   <body>
-    <form>
-      <input type="number" id="Number01" placeholder="Numero um..." />
-      <input type="number" id="Number02" placeholder="Numero dois..." />
-      <input type="submit" id="submit" value="Enviar" />
-    </form>
+    <div class="container">
+      <form>
+        <input type="number" id="Number01" placeholder="Number one..." />
+        <input type="number" id="Number02" placeholder="Number two..." />
+        <input type="submit" id="submit" value="to send" />
+      </form>
+      <p class="msgHtml"></p>
+    </div>
+   
 
-    <p class="msgHtml"></p>
-    <script>
-      const num01 = document.getElementById("Number01");
-      const num02 = document.getElementById("Number02");
-
-      const msg = "Sucesso";
-      const msgErro = "False";
-
-      const form = document.querySelector("form");
-
-      form.addEventListener("submit", e => {
-        e.preventDefault();
-        if (num01.value < num02.value) {
-          document.querySelector(".msgHtml").innerHTML = msg;
-          document.querySelector(".msgHtml").style.color = "green";
-        } else {
-          document.querySelector(".msgHtml").innerHTML = msgErro;
-          document.querySelector(".msgHtml").style.color = "red";
-        }
-      });
-    </script>
+    
+    <script src="./main.js"></script>
   </body>
 </html>

@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+body{
+    background-color: rgb(73, 73, 73);
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.msgHtml{
+    background-color:aqua;
+    padding: 46px 10px;
+}
+
+form {
+  background-color: aqua;
+
+  padding: 10px 10px;
+}
+form input {
+  display: block;
+  margin-top: 10px;
+}
